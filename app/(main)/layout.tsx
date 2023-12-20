@@ -1,3 +1,5 @@
+'use client';
+
 import { Flex, Menu } from 'antd';
 
 export default function Layout({ children }: React.PropsWithChildren) {
