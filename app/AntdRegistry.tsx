@@ -6,7 +6,7 @@ import type Entity from '@ant-design/cssinjs/es/Cache';
 import { useServerInsertedHTML } from 'next/navigation';
 
 export function AntdRegistry({ children }: React.PropsWithChildren) {
-  const cache = React.useMemo<Entity>(() => createCache(), []);
+  const [cache] = React.useState<Entity>(() => createCache());
   const isServerInserted = React.useRef<boolean>(false);
   useServerInsertedHTML(() => {
     // avoid duplicate css insert
