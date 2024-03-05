@@ -1,12 +1,12 @@
-import './globals.css';
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import { AntdRegistry } from './AntdRegistry';
+import "./globals.css";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import { AntdRegistry } from "@ant-design/nextjs-registry";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'antd-next-streaming-issue',
+  title: "antd-next-streaming-issue",
 };
 
 export default function RootLayout({ children }: React.PropsWithChildren) {
